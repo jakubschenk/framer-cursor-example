@@ -52,9 +52,9 @@ export default function ImageLink({
         <span className="text-lg">webscope.design</span>
         <div className="border-b border-black" />
         <p className="font-normal text-sm">
-          Crafting eye-catching designs with intuitive user experiences that
+          {`Crafting eye-catching designs with intuitive user experiences that
           resonate with your audience, making your brand stand out in today's
-          market.
+          market.`}
         </p>
       </div>
     </Link>
