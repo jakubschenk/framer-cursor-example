@@ -89,7 +89,7 @@ export const CursorProvider = ({
   const [showCursor, setShowCursor] = useState(false); // Window undefined fix for pages directory SSG rendering
   useEffect(() => {
     setShowCursor(isMouse);
-  }, [showCursor]);
+  }, [isMouse]);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
