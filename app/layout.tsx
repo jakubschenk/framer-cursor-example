@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import { CursorProvider } from "@/components/context/cursor-provider";
 import { ThemeProvider } from "@/components/context/theme-provider";
 
 import "./globals.css";
@@ -22,7 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <CursorProvider accentColor="#23F12A">{children}</CursorProvider>
+          {children}
         </ThemeProvider>
       </body>
     </html>

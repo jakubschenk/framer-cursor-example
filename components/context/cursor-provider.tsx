@@ -91,6 +91,10 @@ export const CursorProvider = ({
     setShowCursor(isMouse);
   }, [isMouse]);
 
+  useEffect(() => {
+    setCursorState((val) => ({ ...val, bgColor: accentColor }));
+  }, [accentColor]);
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
